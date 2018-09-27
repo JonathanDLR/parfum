@@ -1,0 +1,55 @@
+.opened {
+  width: 100px;
+  transition: all 0.5s fadeOut;
+}
+
+.menu{
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 67px;
+  background: #F1E8F2;
+  transition-duration: 0.5s;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  overflow: hidden;
+  height: 0px;
+}
+
+.slide .menu{
+    height: 300px;
+    padding-top: 100px;
+}
+
+.menu a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.menu .line{
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px solid #b9169b;
+  width: 100%;
+  font-size: 22px;
+  color: #b9169b;
+  text-align: center;
+  border-radius: 0 0 25% 25%;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+
+.menu .line:hover {
+  border-bottom: 2px solid #f9b900;
+  color: #f9b900;
+  border-radius: 0 0 100% 100%;
+  transition: all 0.5s;
+}

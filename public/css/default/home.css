@@ -1,0 +1,325 @@
+.topinfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: auto;
+  background: rgba(253, 253, 254, 0.85);
+  border-bottom: 1px solid #FFFFFF;
+  color: #545455;
+  line-height: 30px;
+  font-size: 17px;
+  overflow: hidden;
+  width: 120%;
+  align-items: center;
+  margin: 0px -7% 20px -6%;
+  align-self: baseline;
+}
+
+.topinfo b{
+  color: #297cb3;
+  font-weight: bold;
+}
+.topinfo .infoleft{
+  text-align: left;
+  min-width: 260px;
+}
+.topinfo .infomiddle{
+  text-align: center;
+  min-width: 160px;
+}
+.topinfo .inforight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: right;
+}
+
+.inforight .logoEtat-on{
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/sprite.png");
+  background-position: -203px -289px;
+}
+
+.inforight .logoEtat-off{
+  display: inline-flex;
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/sprite.png");
+  background-position: -203px -315px;
+  margin: 0 5px;
+}
+
+.news{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  background: url("../../img/bgs/bgrules.png") repeat center fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+.news .new{
+  min-width: 245px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.new{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: auto;
+  cursor: pointer;
+  color: #2C3E50;
+  z-index: 0;
+  width: 60vh;
+}
+
+.new.last{
+  color: #3198D5;
+}
+
+.new.one{
+  width: 100%;
+}
+
+.new.one .flexcolumn {
+  margin-left: 20px;
+}
+
+.new.one .picture{
+  position: relative;
+  margin-left: 20px;
+  flex: 1;
+  max-height: 250px;
+}
+
+
+.new.one .corner-new{
+  right: -5px;
+  top: -5px;
+}
+
+.new.one h1{
+  font-size: 25px;
+  width: unset;
+  padding-right: 10px;
+}
+
+.new.one .new-content ul li p{
+  width: 100%;
+  display: contents;
+  font-size: 18px;
+}
+
+.new .picture{
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 5px solid #1a2636;
+  border-radius: 5px 5px 0 0;
+  min-height: 150px;
+  background-color: rgba(44, 62, 80, 0.5);
+  opacity: 1;
+  transition: all 0.5s;
+  min-width: 245px;
+  margin-bottom: -5px;
+}
+
+.news .new:hover .picture{
+  background-color: rgba(44, 62, 80, 0.25);
+  transition: all 0.5s;
+  border-color: #FFFFFF;
+}
+
+.new.last .picture{
+  border: 5px solid #3196d5;
+  background-color: rgba(41, 125, 179, 0.5);
+  transition: all 0.5s;
+}
+
+.news .new.last:hover .picture{
+  background-color: rgba(41, 125, 179, 0.25);
+  transition: all 0.5s;
+  border-color: #FFFFFF;
+}
+
+.new .picture:hover{
+  background-color: rgba(44, 62, 80, 0.25);
+  transition: all 0.5s;
+  border-color: #FFFFFF;
+}
+
+.new.last .picture:hover{
+  background-color: rgba(41, 125, 179, 0.25);
+  transition: all 0.5s;
+  border-color: #FFFFFF;
+}
+
+.new h1{
+  z-index: 20;
+  background: #2c3e50;
+  border: 1px solid #212f3d;
+  color: #FFFFFF;
+  line-height: 35px;
+  padding-left: 10px;
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 0 3px 3px 0;
+  font-weight: bold;
+  width: 100%;
+}
+
+.new.last h1{
+  background: #3197d6;
+  border: 1px solid #00a7fe;
+  color: #FFFFFF;
+}
+
+
+.new h1 .ico-new{
+  display: inline-block;
+  height: 50px;
+  width: 46px;
+  margin-top: -50px;
+  margin-left: -60px;
+  margin-right: 12px;
+  background-image: url("../../img/sprite.png");
+  background-position: -794px -50px;
+  line-height: 60px;
+  text-align: center;
+  color: #2c3e50;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.new.last h1 .ico-new{
+  background-position: -794px 0;
+  color: #3196d5;
+}
+
+.new-content{
+  position: relative;
+  z-index: -1;
+  background: rgba(249, 249, 249, 0.8);
+  border: 1px solid #84a0c0;
+  margin-top: -34px;
+  padding: 40px 10px 10px 10px;
+  line-height: 22px;
+  min-height: 120px;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.5s;
+  min-width: 245px;
+  width: 100%;
+}
+
+.new-content:after{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  content: '+';
+  font-size: 30px;
+  color: #BFC5CA;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  height: 18px;
+  width: 18px;
+  background-color: #2c3e50;
+  line-height: 16px;
+  font-weight: bolder;
+  transition: all 0.5s;
+}
+
+.last .new-content:after{
+  background-color: #3196d5;
+  color: rgba(249, 249, 249, 0.8);
+}
+
+.new:hover .new-content:after{
+color: #FFFFFF;
+transition: all 0.5s;
+}
+
+
+.new:hover .new-content {
+  background: rgba(249, 249, 249, 1);
+  transition: all 0.5s;
+  border-color: #FFFFFF;
+}
+
+.last .new-content {
+  border: 1px solid #84a0c0;
+}
+
+
+.corner-new{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 41px;
+  width: 80px;
+  background: transparent url("../../img/sprite.png");
+  background-position: -763px -753px;
+  margin-left: -40px;
+}
+
+.last .corner-new{
+  background-position: -341px -16px;
+}
+
+.new-content ul {
+  position: relative;
+}
+
+.new-content ul li{
+  list-style-type:none;
+  position: relative;
+}
+
+.one .new-content ul li{
+  padding: 10px;
+}
+
+.new-content ul li i{
+  padding-left: 40px;
+  font-style: normal;
+}
+
+.new-content ul li:before{
+  display: inline-grid;
+  content: '';
+  height: 16px;
+  width: 16px;
+  background: transparent url("../../img/sprite.png") -355px -89px;
+  margin: 2px 5px 0px 0px;
+}
+
+.last .new-content ul li:before{
+  background-position: -355px -73px;
+}
+
+.new.one .picture.extend{
+  position: relative;
+  max-height: none;
+  max-width: none;
+  flex-grow: 10;
+  height: 50%;
+  min-height: 300px;
+  max-height: 500px;
+  flex-basis: auto;
+}
