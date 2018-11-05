@@ -5,16 +5,18 @@
 <div id="produits" class="content">
 
   <div class="box">
+
+      <div class="title">Nos produits</div>
     <div class="new last">
       <div class="picture">
         <div class="corner-new"></div>
       </div>
-      <h1><div class="ico-new">o.9</div>Update 0.9 - NEWS & +</h1>
+      <h1><div class="ico-new">o.9</div>Parfum Senteurs Etoilé</h1>
       <div class="new-content">
         <ul>
-          <li>Ajout des News sur la page d'accueil</li>
-          <li>Intégration Live-Map</li>
-          <li>Formulaire de Contact Rapide (FCR)</li>
+          <li>Avec de la vrai poudre d'étoile</li>
+          <li>Rafairmit le teint</li>
+          <li>Hydrate à 200%</li>
         </ul>
       </div>
     </div>

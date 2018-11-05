@@ -43,8 +43,14 @@ button:hover{
   position: fixed;
   margin: 0;
   padding: 0;
-  margin-top: -6vh;
   z-index: 1;
+  top: 100px;
+}
+
+body.slide #BUTmenu{
+  top: 300px;
+  transition-duration: 0.5s;
+  content: 'Fermer'
 }
 
 .flexcolumn{
@@ -76,7 +82,7 @@ button:hover{
   padding-top: 100px;
   padding-bottom: 50px;
   margin-top: 6vh;
-  margin-bottom: 20vh;
+  margin-bottom: -6vh;
 }
 
 #contact {
@@ -92,9 +98,6 @@ button:hover{
   min-width: 212px;
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid #FFFFFF;
-  border-radius: 3px;
-  padding: 0 10px;
-  padding-top: 35px;
   color: #e2519c;
   font-size: 22px;
   padding: 40px 20px 20px 20px;
@@ -102,7 +105,20 @@ button:hover{
   border-radius: 20px;
   width: 100%;
 }
-
+.boxform{
+    position: relative;
+    min-width: 212px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    color: #e2519c;
+    font-size: 22px;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
 #message {
   min-height: 600px;
 }
@@ -129,8 +145,9 @@ button:hover{
   border-radius: 20px;
   border: 2px solid white;
   width: 100%;
-  height: auto;
   max-height: 500px;
+  min-height: 250px;
+  height: 40vh;
 }
 
 #DIVnewsletter {
